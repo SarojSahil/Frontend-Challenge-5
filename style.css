@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Sora";
+  src: url(./assets/Sora-VariableFont_wght.ttf)
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Sora";
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+:root {
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 2.25rem;
+
+  --mustard: #F5C044;
+  --green: #4CA154;
+  --black: #18181B;
+  --dark-gray: #52525A;
+  --light-gray: #D4D4D8;
+  --off-white: #FAFAF9;
+  --white: #FFFFFF;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--off-white);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.container .left div {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background-color: var(--mustard);
+  display: inline-block;
+  border-radius: 100%;
+
+}
+
+.container .left h1 {
+  font-size: var(--text-lg);
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.container .left h2 {
+  font-size: var(--text-md);
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.container .left ul {
+  list-style-type: none;
+}
+
+.container .left ul li {
+  display: flex;
+  align-items: start;
+  column-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-sm);
+  ;
+  color: var(--dark-gray);
+}
+
+.container .right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.container .right .card {
+  padding: 1.5rem 2rem;
+  box-shadow: 3px 3px 10px rgb(241, 241, 241);
+  background-color: var(--white);
+  border-radius: 0.7rem;
+  max-width: 20rem;
+  position: relative;
+}
+
+.container .right .card .card-header {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .right .card .card-header img {
+  height: 22px;
+}
+
+.container .right .card h3 {
+  font-size: var(--text-base);
+  margin-bottom: 0.5rem;
+  color: var(--black)
+}
+
+.container .right .card p {
+  font-size: var(--text-sm);
+  line-height: 1.5rem;
+  color: var(--dark-gray);
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    padding: 2rem 3rem;
+  }
+
+  .container .right .card:first-of-type {
+    left: 6rem;
+  }
+
+  .container .right .card:last-of-type {
+    right: 6rem;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  .container {
+    flex-direction: row;
+    padding: 2rem 4rem;
+  }
+
+  .container .left {
+    flex-shrink: 1;
+    flex: 50%;
+  }
+
+  .container .right {
+    flex-shrink: 0;
+    flex: 50%;
+  }
+}
