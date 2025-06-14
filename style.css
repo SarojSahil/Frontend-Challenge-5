@@ -8,6 +8,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Sora";
+  font-weight: 400;
 }
 
 html,
@@ -59,6 +60,7 @@ body {
   font-size: var(--text-lg);
   color: var(--black);
   margin-bottom: 1rem;
+  font-weight: 700
 }
 
 .container .left h2 {
@@ -111,7 +113,8 @@ body {
 .container .right .card h3 {
   font-size: var(--text-base);
   margin-bottom: 0.5rem;
-  color: var(--black)
+  color: var(--black);
+  font-weight: 700;
 }
 
 .container .right .card p {
